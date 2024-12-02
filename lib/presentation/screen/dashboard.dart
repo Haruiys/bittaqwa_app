@@ -137,17 +137,22 @@ class Dashboard extends StatelessWidget {
               const SizedBox(
                 width: 14,
               ),
-              Column(
-                children: [
-                  Image.asset("assets/images/ic_menu_video_kajian.png"),
-                  const Text(
-                    "video kajian",
-                    style: TextStyle(
-                        fontFamily: "PoppinsSemiBold",
-                        fontSize: 14,
-                        color: ColorApp.white),
-                  ),
-                ],
+              GestureDetector(
+                onTap: (){
+                  Navigator.pushNamed(context, '/video-kajian');
+                },
+                child: Column(
+                  children: [
+                    Image.asset("assets/images/ic_menu_video_kajian.png"),
+                    const Text(
+                      "video kajian",
+                      style: TextStyle(
+                          fontFamily: "PoppinsSemiBold",
+                          fontSize: 14,
+                          color: ColorApp.white),
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(
                 width: 14,
